@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<!-- saved from url=(0029)http://localhost/DB/index.php -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CRUD PHP dengan Foto</title>
+</head>
+<body>
+
+<h2>Daftar Pengguna</h2>
+
+<table border="1">
+    <thead>
+        <tr>
+            <th>ID</th>
+            <th>Name</th>
+            <th>Email</th>
+            <th>Foto</th>
+            <th>Actions</th>
+        </tr>
+    </thead>
+    <tbody>
+                <tr>
+            <td>1</td>
+            <td>Wahyu Romadhoni Aditya</td>
+            <td>2310631020166@student.unsika.ac.id</td>
+            <td><img src="./index_files/WAHYU JPEG.jpeg" width="100"></td>
+            <td>
+                <a href="http://localhost/DB/index.php?delete=1">Delete</a>
+                <a href="http://localhost/DB/edit.php?id=1">Edit</a>
+            </td>
+        </tr>
+            </tbody>
+</table>
+
+<h2>Tambah Pengguna</h2>
+<form method="POST" enctype="multipart/form-data">
+    <label for="name">Name:</label><br>
+    <input type="text" id="name" name="name" required="" fdprocessedid="3y5f4"><br><br>
+    <label for="email">Email:</label><br>
+    <input type="email" id="email" name="email" required="" fdprocessedid="qc9hqr"><br><br>
+    <label for="foto">Foto:</label><br>
+    <input type="file" id="foto" name="foto" accept="image/*" required=""><br><br>
+    <input type="submit" name="insert" value="Tambah" fdprocessedid="j2f4c">
+</form>
+
+
+
+
+<span id="PING_IFRAME_FORM_DETECTION" style="display: none;"></span></body></html>
